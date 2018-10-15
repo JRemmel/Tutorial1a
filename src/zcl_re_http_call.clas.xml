@@ -5,8 +5,8 @@
    <VSEOCLASS>
     <CLSNAME>ZCL_RE_HTTP_CALL</CLSNAME>
     <VERSION>1</VERSION>
-    <LANGU>D</LANGU>
-    <DESCRIPT>Test http call external</DESCRIPT>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Test http call</DESCRIPT>
     <EXPOSURE>2</EXPOSURE>
     <STATE>1</STATE>
     <CLSFINAL>X</CLSFINAL>
