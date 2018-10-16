@@ -1,4 +1,4 @@
-@AbapCatalog.sqlViewName: 'ZRE1_V_CITY'
+@AbapCatalog.sqlViewName: 'ZRE3_V_CITY'
 @AbapCatalog.compiler.compareFilter: true
 @AccessControl.authorizationCheck: #CHECK
 @EndUserText.label: 'CDS View on City Table for TechEd CNA'
@@ -6,7 +6,7 @@
 @Search.searchable: true 
 @UI: { headerInfo: { typeName: 'City', typeNamePlural: 'Cities' } }
                      
-define view ZRE1_CDS_CITY as select from ZRE1TCITY {
+define view ZRE3_CDS_CITY as select from ZRE3TCITY {
     @UI.hidden: true
     key city_id, 
     @Search.defaultSearchElement: true
