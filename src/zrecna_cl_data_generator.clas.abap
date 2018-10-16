@@ -1,4 +1,4 @@
-CLASS zcna_cl_data_generator DEFINITION
+CLASS zrecna_cl_data_generator DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC .
@@ -11,7 +11,7 @@ ENDCLASS.
 
 
 
-CLASS zcna_cl_data_generator IMPLEMENTATION.
+CLASS zrecna_cl_data_generator IMPLEMENTATION.
   METHOD if_oo_adt_classrun~main.
     data ls_city type zcna_t_city.
     data lt_city type STANDARD TABLE OF zcna_t_city.
