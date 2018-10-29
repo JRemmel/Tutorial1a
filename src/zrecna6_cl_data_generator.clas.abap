@@ -13,10 +13,10 @@ ENDCLASS.
 
 CLASS zrecna_cl_data_generator IMPLEMENTATION.
   METHOD if_oo_adt_classrun~main.
-    data ls_city type ZRE5TCITY.
-    data lt_city type STANDARD TABLE OF ZRE1TCITY.
+    data ls_city type ZRE6TCITY.
+    data lt_city type STANDARD TABLE OF ZRE6TCITY.
 
-    DELETE FROM ZRE5TCITY.
+    DELETE FROM ZRE6TCITY.
 
     ls_city-city_id     = cl_uuid_factory=>create_system_uuid( )->create_uuid_x16( ).
     ls_city-name        = 'Las Vegas'.
@@ -66,7 +66,7 @@ CLASS zrecna_cl_data_generator IMPLEMENTATION.
     ls_city-population  = 21750000.
     APPEND ls_city to lt_city.
 
-    INSERT ZRE5TCITY from table @lt_city.
+    INSERT ZRE6TCITY from table @lt_city.
 
     if sy-subrc = 0.
         out->write( 'Data generation was successful.').
