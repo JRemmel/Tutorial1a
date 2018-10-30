@@ -13,8 +13,8 @@ ENDCLASS.
 
 CLASS zrecna_cl_data_generator IMPLEMENTATION.
   METHOD if_oo_adt_classrun~main.
-    data ls_city type ZRE6TCITY.
-    data lt_city type STANDARD TABLE OF ZRE6TCITY.
+    data ls_city type ZRE7TCITY.
+    data lt_city type STANDARD TABLE OF ZRE7TCITY.
 
     DELETE FROM ZRE6TCITY.
 
@@ -66,7 +66,7 @@ CLASS zrecna_cl_data_generator IMPLEMENTATION.
     ls_city-population  = 21750000.
     APPEND ls_city to lt_city.
 
-    INSERT ZRE6TCITY from table @lt_city.
+    INSERT ZRE7TCITY from table @lt_city.
 
     if sy-subrc = 0.
         out->write( 'Data generation was successful.').
