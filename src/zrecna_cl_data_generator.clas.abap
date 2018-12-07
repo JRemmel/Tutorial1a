@@ -16,7 +16,7 @@ CLASS zrecna_cl_data_generator IMPLEMENTATION.
     data ls_city type ZRE7TCITY.
     data lt_city type STANDARD TABLE OF ZRE7TCITY.
 
-    DELETE FROM ZRE6TCITY.
+    DELETE FROM ZRE7TCITY.
 
     ls_city-city_id     = cl_uuid_factory=>create_system_uuid( )->create_uuid_x16( ).
     ls_city-name        = 'Las Vegas'.
