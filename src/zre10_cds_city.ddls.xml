@@ -3,7 +3,7 @@
  <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
   <asx:values>
    <DDLS>
-    <DDLNAME>ZRE9_CDS_CITY</DDLNAME>
+    <DDLNAME>ZRE10_CDS_CITY</DDLNAME>
     <DDLANGUAGE>E</DDLANGUAGE>
     <DDTEXT> CDS View on City Table for TechEd CNA Sessions</DDTEXT>
     <SOURCE_TYPE>V</SOURCE_TYPE>
